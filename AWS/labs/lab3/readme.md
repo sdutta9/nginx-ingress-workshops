@@ -19,7 +19,7 @@
      ```
 
 - Create Common Resources:
-  1. **(NOTE:Check with Chris if this step can be ignored)** Create a secret with TLS certificate and a key for the default server in NGINX.
+  1. Create a secret with TLS certificate and a key for the default server in NGINX.
      ```bash
       cd ..
       kubectl apply -f examples/shared-examples/default-server-secret/default-server-secret.yaml
@@ -43,7 +43,7 @@
      kubectl apply -f common/crds/k8s.nginx.org_policies.yaml
      ```
    
-   2. **(NOTE:Check with Chris if this step can be ignored)** Create a custom resource for GlobalConfiguration resource:
+   2. Create a custom resource for GlobalConfiguration resource:
       ```bash
       kubectl apply -f common/crds/k8s.nginx.org_globalconfigurations.yaml
       ```
